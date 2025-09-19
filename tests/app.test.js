@@ -1,6 +1,5 @@
 const request = require('supertest');
-const express = require('express');
-const app = require('../src/app'); // adjust path if needed
+const app = require('../src/app'); // just the Express app, no listen()
 
 describe('GET /', () => {
   it('should return app info JSON', async () => {
