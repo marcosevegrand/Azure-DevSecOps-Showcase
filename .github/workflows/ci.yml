@@ -52,7 +52,7 @@ jobs:
       - name: Build Docker image
         run: |
           docker build -t ${{ secrets.ACR_LOGIN_SERVER }}/azuredevsecops-showcase:latest .
-          docker tag ${{ secrets.ACR_LOGIN_SERVER }}/azuredevsecops-showcase:latest ${{ secrets.ACR_LOGIN_SERVER }}/azuredevops-portfolio:${{ github.sha }}
+          docker tag ${{ secrets.ACR_LOGIN_SERVER }}/azuredevsecops-showcase:latest ${{ secrets.ACR_LOGIN_SERVER }}/azuredevsecops-showcase:${{ github.sha }}
 
       - name: Push Docker image to ACR
         run: |
